@@ -43,7 +43,7 @@ b:bundles/bundle_es.properties:39587:application/unknown
 b:bundles/bundle_pl.properties:37452:application/unknown
 b:bundles/bundle_ita.properties:38874:application/unknown
 b:bundles/bundle_ko.properties:40958:application/unknown
-b:bundles/bundle_fr.properties:39259:application/unknown
+b:bundles/bundle_fr.properties:39599:application/unknown
 b:bundles/bundle_ru.properties:55934:application/unknown
 b:bundles/bundle.properties:33842:application/unknown
 b:bundles/bundle_de.properties:38497:application/unknown
