@@ -19,6 +19,20 @@
               <div align="center" id="embed-html"></div>
               <script type="text/javascript" src="html/html.nocache.js"></script>
        <script type="module" src="https://joxiagame.github.io/Joxia-Games/tracker.js?game=MINDUSTRY"></script>
+       <script>
+              /* Joxia : meilleure vague atteinte (toutes cartes) envoyée au classement du hub.
+                 Le jeu range ses records dans le localStorage : io.anuke.moment:hiscore<carte>i */
+              setInterval(function () {
+                     var best = 0;
+                     try {
+                            for (var i = 0; i < localStorage.length; i++) {
+                                   var k = localStorage.key(i);
+                                   if (/^io\.anuke\.moment:hiscore.+i$/.test(k)) best = Math.max(best, parseInt(localStorage.getItem(k), 10) || 0);
+                            }
+                     } catch (e) {}
+                     if (best && window.joxiaScore) window.joxiaScore(best);
+              }, 10000);
+       </script>
 </body>
        <script>
               var keys = [27, 38, 37, 39, 40, 17, 9];
