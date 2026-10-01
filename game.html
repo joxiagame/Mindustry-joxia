@@ -5,8 +5,11 @@
               <script>
               /* Joxia : français par défaut (modifiable dans Paramètres > Langue) */
               try { if (localStorage.getItem("io.anuke.moment:locales") === null) localStorage.setItem("io.anuke.moment:locales", "fr"); } catch (e) {}
+              /* Joxia : sur écran tactile, interface mobile d'origine du jeu (version Android) */
+              window.joxiaMobile = ("ontouchstart" in window) || navigator.maxTouchPoints > 0;
               </script>
               <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+              <script src="https://joxiagame.github.io/Joxia-Games/touch.js" charset="utf-8" data-quit="tc"></script>
               <link href="styles.css" rel="stylesheet" type="text/css">
               <script src="soundmanager2-setup.js"></script>
   			  <script src="soundmanager2-jsmin.js"></script>
